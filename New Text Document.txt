@@ -1,0 +1,39 @@
+Algorithm: Filtering and Bubble Sort on Full Name
+
+1. Start the program.
+
+2. Initialize the string variable full_name with "Mark Jevin Radaza Mullet" and an empty list unsorted_array.
+
+3. Filter Characters:
+
+	Convert full_name to uppercase so letter comparisons are consistent.
+
+	Loop through each character in full_name.
+
+	Check if the character is an alphabetic letter (A–Z) to exclude spaces and symbols.
+
+	Check if the character is not already inside unsorted_array to discard duplicate letters.
+
+	Append valid, unique characters to unsorted_array.
+
+4. Copy Array: Duplicate unsorted_array into sorted_array so both versions are preserved.
+
+5. Sort Array (Bubble Sort - Alphabetical A to Z):
+
+	Let $n$ be the length of sorted_array.
+
+	Repeat outer loop $i$ from $0$ to $n - 1$:
+
+	Set flag swapped = False.
+
+	Repeat inner loop $j$ from $0$ to $n - i - 2$:
+
+	Compare sorted_array[j] and sorted_array[j + 1].
+
+	If sorted_array[j] > sorted_array[j + 1], swap their positions and set swapped = True.
+
+	If swapped remains False after a full pass, break out of the loop early.
+
+6. Display both unsorted_array and sorted_array.
+
+7. End the program.
